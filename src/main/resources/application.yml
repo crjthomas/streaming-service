@@ -1,0 +1,33 @@
+# Application properties
+server:
+  port: 8081
+
+#max file and request size
+spring:
+  http:
+   multipart:
+    max-file-size: 500MB
+    max-request-size: 500MB
+
+#AWS properties
+cloud:
+  aws:
+    region:
+      static: us-west-2
+    stack:
+      auto: false
+    credentials:
+      accessKey: AKIAXDRP47C66LULXSOA
+      secretKey: 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
+
+  application:
+    bucket:
+      name: scc-archives
+      url: https://scc-archives:s3:us-west-2:amazonaws:com
+
+  logging:
+    level:
+      com:
+        amazonaws:
+          util:
+            EC2MetadataUtils: error
