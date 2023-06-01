@@ -5,9 +5,9 @@ server:
 #max file and request size
 spring:
   http:
-   multipart:
-    max-file-size: 500MB
-    max-request-size: 500MB
+    multipart:
+      max-file-size: 2000MB
+      max-request-size: 2000MB
 
 #AWS properties
 cloud:
@@ -17,8 +17,8 @@ cloud:
     stack:
       auto: false
     credentials:
-      accessKey: AKIAXDRP47C66LULXSOA
-      secretKey: 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
+      accessKey:
+      secretKey:
 
   application:
     bucket:
